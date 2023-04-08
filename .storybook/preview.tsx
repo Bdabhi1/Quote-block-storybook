@@ -1,5 +1,5 @@
 import type { Preview } from "@storybook/react";
-import { QuoteContextProvider } from "../src/provider/Quote";
+import { QuoteContextProvider } from "../src/provider/QuoteBlockThemeProvider";
 import React from "react";
 
 const preview: Preview = {

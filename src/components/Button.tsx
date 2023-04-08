@@ -32,8 +32,6 @@ const Button = ({
     onClick && onClick(e);
   };
 
-  console.log(COLORS[theme as BUTTON_THEME]);
-
   return (
     <ButtonWrapper
       theme={theme}

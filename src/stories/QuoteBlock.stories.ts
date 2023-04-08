@@ -1,11 +1,10 @@
-import QuoteBlock from "../components/QuoteBlock/QuoteBlock";
+import QuoteBlock from "../components/QuoteBlock";
 import type { Meta, StoryObj } from "@storybook/react";
-import { Header } from "./Header";
 
 const meta = {
   title: "QuoteBlock",
   component: QuoteBlock,
-} satisfies Meta<typeof Header>;
+} satisfies Meta<typeof QuoteBlock>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

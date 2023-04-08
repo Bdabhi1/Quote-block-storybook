@@ -1,8 +1,7 @@
 import React, { useContext } from "react";
 import Button from "../Button";
-import "../../App.css";
 import { BRAND, brandTheme, quoteBlockData } from "../../utils/constant";
-import { QuoteContext } from "../../provider/Quote";
+import { QuoteContext } from "../../provider/QuoteBlockThemeProvider";
 import {
   QuoteBlockHeadSection,
   QuoteBlockTextBox,
@@ -10,6 +9,7 @@ import {
   QuoteBlockTitleUnderLine,
   QuoteBlockWrapper,
 } from "./QuoteBlock.styled";
+import "../../App.css";
 
 const QuoteBlock = () => {
   const { title, subTitle, description } = quoteBlockData;
@@ -37,7 +37,7 @@ const QuoteBlock = () => {
             <QuoteBlockTitleUnderLine theme={quoteBlockTheme} />
           )}
         </QuoteBlockHeadSection>
-        <div className="quote-right">
+        <div className="quote-content-section">
           <p className="quote-description">{description}</p>
           <div className="quote-action">
             <Button theme={brandTheme[story as BRAND].primaryBtn}>

@@ -15,7 +15,7 @@ p {
   margin: 0;
 }
 
-.quote-right {
+.quote-content-section {
   display: flex;
   flex-direction: column;
   gap: 12px;
